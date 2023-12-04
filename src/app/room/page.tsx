@@ -1,5 +1,6 @@
 "use client"
 import GenerateBtn from '@/components/GenerateBtn'
+import PreviewImg from '@/components/PreviewImg'
 import SelectInputs from '@/components/SelectInputs'
 import ThemeOptions from '@/components/ThemeOptions'
 import UploadDnd from '@/components/UploadDnd'
@@ -38,6 +39,7 @@ function page() {
             </p>
           </div>
           {/* <PreviewImg/> */}
+          <PreviewImg/>
         </div>
       </div>
     </div>

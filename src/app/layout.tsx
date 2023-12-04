@@ -23,26 +23,26 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body
-          className={
-            inter.className + " bg-[#17181c] flex flex-col min-h-screen"
-          }
-        >
-          <header className="w-full">
-            <div className="container border-b p-5 mx-auto flex items-center justify-between">
-              <Link href={"/"} className="flex items-center gap-3">
-                <Image width={50} height={50} src={couch} alt="couch logo" />
-                <h3 className="text-white md:text-3xl text-2xl font-bold">
-                  RoomGPT
-                </h3>
-              </Link>
-              <UserInfo/> 
-            </div>
-          </header>
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body
+        className={
+          inter.className + " bg-[#17181c] flex flex-col min-h-screen"
+        }
+      >
+        <header className="w-full">
+          <div className="container border-b p-5 mx-auto flex items-center justify-between">
+            <Link href={"/"} className="flex items-center gap-3">
+              <Image width={50} height={50} src={couch} alt="couch logo" />
+              <h3 className="text-white md:text-3xl text-2xl font-bold">
+                RoomGPT
+              </h3>
+            </Link>
+            <UserInfo/> 
+          </div>
+        </header>
+        {children}
+      </body>
+    </html>
+  </ClerkProvider>
   );
 }
